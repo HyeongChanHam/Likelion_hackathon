@@ -1,0 +1,8 @@
+{% for timeslot in time_slot %}
+<a href="{% url 'enrollment' timeslot.id %}">
+    <div class="timeslot">
+    {{timeslot.date}} {{timeslot.starttime}} {{timeslot.endtime}} {{timeslot.isUsed}}
+    <br>
+    </div>
+</a>
+{% endfor %}

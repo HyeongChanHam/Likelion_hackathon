@@ -1,0 +1,8 @@
+{% for content in all_contents %}
+<a href="{% url 'detail' content.id %}">
+    <div class="all_contents">
+    {{content.title}}
+    </div>
+</a>
+<br>
+{% endfor %}
